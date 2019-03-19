@@ -1,0 +1,53 @@
+.section-partners {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(phone) {
+    height: 100vh;
+  }
+
+  @include respond(tab-land) {
+    height: auto;
+    transform: translateY(16rem);
+  }
+}
+
+.partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+
+    @include respond(phone) {
+      flex: none;
+    }
+  }
+
+  &__img {
+    width: 55rem;
+    height: 40rem;
+    animation: moveInRight 1.5s ease-out 0.75s;
+
+    @include respond(phone) {
+      width: 55rem;
+    }
+
+    @include respond(tab-land) {
+      width: 45rem;
+      height: 35rem;
+    }
+  }
+}

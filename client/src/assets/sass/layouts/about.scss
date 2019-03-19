@@ -1,0 +1,13 @@
+.section-about {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  @include respond(phone) {
+    height: 100vh;
+  }
+
+  @include respond(tab-land) {
+    height: auto;
+  }
+}

@@ -1,0 +1,32 @@
+.story {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7rem;
+  padding-right: 7rem;
+
+  &__text {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+
+hr {
+  width: 10%;
+  height: 0.5rem;
+  margin-right: auto;
+  background-color: $color-primary-light;
+  border: 0 none;
+}
